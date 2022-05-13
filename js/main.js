@@ -70,23 +70,21 @@ $(document).ready(function() {
     
     // Аккордеон - Левое меню
     
-    document.addEventListener('DOMContentLoaded', () => {
-        const leftMenuWr = document.querySelectorAll('.left-menu__block__wrapper');
-        
-        leftMenuWr.forEach(el => {
-            el.addEventListener('click', (e) => {
-                const self = e.currentTarget;
-                const selfAccordeonLvl1 = self.querySelector('[data-name="accordeon-lvl1"]');
-                const selfAccordeonLvl2 = self.querySelector('[data-name="accordeon-lvl2"]');
-                
-                self.classList.toggle('accordeon-open');
-                
-                if (self.classList.contains('accordeon-open')) {
-                    selfAccordeonLvl2.style.maxHeight = selfAccordeonLvl2.scrollHeight + 'px';
-                } else {
-                    selfAccordeonLvl2.style.maxHeight = null;
-                }
-            })
-        })
-    })
-})
+    const leftMenuWr = document.querySelectorAll('.left-menu__block__wrapper');
+    
+    leftMenuWr.forEach(el => {
+        el.addEventListener('click', (e) => {
+            const self = e.currentTarget;
+            const selfAccordeonLvl1 = self.querySelector('[data-name="accordeon-lvl1"]');
+            const selfAccordeonLvl2 = self.querySelector('[data-name="accordeon-lvl2"]');
+            
+            self.classList.toggle('accordeon-open');
+            
+            if (self.classList.contains('accordeon-open')) {
+                selfAccordeonLvl2.style.maxHeight = selfAccordeonLvl2.scrollHeight + 'px';
+            } else {
+                selfAccordeonLvl2.style.maxHeight = null;
+            }
+        });
+    });
+});
