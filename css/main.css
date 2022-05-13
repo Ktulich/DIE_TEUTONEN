@@ -732,6 +732,10 @@ img {
   transition: .3s;
 }
 
+.kit-card__img {
+  transition: all .3s ease-in-out;
+}
+
 .kit-card__img-hovertext {
   display: inline-block;
   opacity: 0;
@@ -740,7 +744,7 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  transition: .3s;
+  transition: all .3s ease-in-out;
 }
 
 .kit-card__img-hovertext p {
@@ -762,6 +766,12 @@ img {
   font-size: 36px;
   line-height: 1;
   text-align: center;
+}
+
+.kit-card__blur {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  transition: all .3s ease-in-out;
 }
 
 .left-menu {
