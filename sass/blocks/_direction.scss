@@ -1,0 +1,42 @@
+.direction {
+    padding-top: 30px;
+    padding-bottom: 70px;
+
+    height: 776px;
+
+    background-color: #F4F8F9;
+}
+
+.direction__content__desc {
+    display: flex;
+    height: 570px;
+}
+
+.direction__content-title h2 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1;
+    text-align: right;
+}
+
+.direction__content__desc {
+    margin-top: 50px;
+}
+
+.direction__content__desc-text {
+    margin-left: 40px;
+
+    max-width: 540px;
+}
+
+.direction__content__desc-text p {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.3;
+    text-align: right;
+}
+
+.direction__content__desc-img {
+    width: 530px;
+    height: 570px;
+}

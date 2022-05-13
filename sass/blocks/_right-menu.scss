@@ -1,0 +1,140 @@
+.right-menu {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.right-menu__wrapper {
+    padding-top: 30px;
+    padding-bottom: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 875px;
+
+    border-radius: 0 15px 15px 0;
+    background-color: #EBEEFF;
+}
+
+.right-menu__main-title {
+    text-align: center;
+}
+
+.right-menu__main-title h1{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1;
+    color: #000000;
+}
+
+.right-menu__img {
+    margin-top: 30px;
+}
+
+.right-menu__text {
+    margin-top: 30px;
+    
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    
+    color: #000000;
+}
+
+.right-menu__text p {
+    margin-bottom: 15px;
+}
+
+.right-menu__text ul {
+    margin-left: 40px;
+    margin-bottom: 15px;
+    list-style-type: disc;
+}
+
+.right-menu__photo-comment {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;  
+}
+
+.right-menu__photo-comment h2 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    
+    color: #000000;
+}
+
+.right-menu__wrapper-mehlerst {
+    display: flex;
+    flex-wrap: wrap ;
+    flex-direction: row;
+}
+
+.right-menu__wrapper-mehlerst .right-menu__text {
+    margin-right: 17px;
+    width: 372px;
+}
+
+.right-menu__wrapper-mehlerst .right-menu__img {
+    width: 436px;
+}
+
+.right-menu__wrapper-feldhosen {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.right-menu__wrapper-feldhosen .right-menu__text {
+    margin-right: 17px;
+    width: 414px;
+}
+
+.right-menu__wrapper-feldhosen .right-menu__img {
+    width: 394px;
+}
+
+.right-menu__wrapper-nasseschutzanzug {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.right-menu__wrapper-nasseschutzanzug .right-menu__text {
+    margin-right: 17px;
+    width: 392px;
+}
+
+.right-menu__wrapper-nasseschutzanzug .right-menu__img {
+    width: 416px;
+}
+
+.right-menu__wrapper-bwgamaschen {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.right-menu__wrapper-bwgamaschen .right-menu__text {
+    margin-right: 13px;
+    width: 353px;
+}
+
+.right-menu__wrapper-bwgamaschen .right-menu__img {
+    width: 459px;
+}
+
+.right-menu__wrapper-ks20052007 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.right-menu__wrapper-ks20052007 .right-menu__text {
+    margin-right: 13px;
+    width: 350px;
+}
+
+.right-menu__wrapper-ks20052007 .right-menu__img {
+    width: 458px;
+}

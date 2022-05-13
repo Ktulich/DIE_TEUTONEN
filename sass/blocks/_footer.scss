@@ -1,0 +1,45 @@
+.footer {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #FFFF00;
+}
+
+.footer__line__black-color {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+
+    background-color: #000000;
+}
+
+.footer__line__red-color {
+    position: absolute;
+    top: 100px;
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+
+    background-color: red;
+}
+
+.footer .container {
+    max-width: 1110px;
+    position: relative;
+}
+
+.footer__copyright {
+    position: absolute;
+    bottom: -280px;
+    left: 0;
+    
+}
+
+.footer__copyright p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.3;
+    
+    color: #000000;
+}

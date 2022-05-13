@@ -1,0 +1,37 @@
+.history {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.history__content__desc {
+    display: flex;
+    height: 430px;
+}
+
+.history__content-title h2 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1;
+}
+
+.history__content__desc {
+    margin-top: 50px;
+}
+
+.history__content__desc-text {
+    margin-right: 40px;
+
+    max-width: 540px;
+}
+
+.history__content__desc-text p {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 1.5;
+    
+}
+
+.history__content__desc-img {
+    max-width: 530px;
+    max-height: 430px;
+}
