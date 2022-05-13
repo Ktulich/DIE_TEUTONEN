@@ -72,24 +72,8 @@ const hoverTextKitCardImg = document.querySelector('.kit-card__img-hovertext');
 
 // Аккордеон - Левое меню
 
-    // LVL1
-    // const accordeonLvl1 = document.querySelectorAll('[data-name="accordeon-lvl1"]');
-
-    // accordeonLvl1.forEach((item) => {
-    //         item.addEventListener('click', () => {
-    //             let accordeonLvl2 = item.querySelectorAll('.left-menu__lvl2');
-
-    //             if (accordeonLvl2.style.maxHeight) {
-    //                 document.querySelectorAll('.left-menu__lvl2').forEach((item) => item.style.maxHeight = null);
-    //             } else {
-    //                 document.querySelectorAll('.left-menu__lvl2').forEach((item) => item.style.maxHeight = null);
-    //                 accordeonLvl2.style.maxHeight = accordeonLvl2.scrollHeight + 'px';
-    //             }
-    //         });
-    //     })
-
     document.addEventListener('DOMContentLoaded', () => {
-        const leftMenuWr = document.querySelectorAll('.left-menu__wrapper');
+        const leftMenuWr = document.querySelectorAll('.left-menu__block__wrapper');
 
         leftMenuWr.forEach(el => {
             el.addEventListener('click', (e) => {

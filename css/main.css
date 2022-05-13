@@ -317,7 +317,7 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
   height: 120px;
-  background-image: url(/DT_Site/img/DT_main_page/header/header_top_bc.png);
+  background-image: url(/img/DT_main_page/header/header_backgound.jpg);
   background-repeat: no-repeat;
   background-position: 50% 0;
 }
@@ -338,7 +338,7 @@ img {
   margin-right: auto;
   width: 1440px;
   height: 916px;
-  background-image: url(/DT_Site/img/DT_main_page/header/header_backgound.jpg);
+  background-image: url(/img/DT_main_page/header/header_backgound.jpg);
   background-repeat: no-repeat;
 }
 
@@ -769,7 +769,7 @@ img {
   margin-bottom: 70px;
 }
 
-.left-menu__wrapper {
+.left-menu__block__wrapper {
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
@@ -777,10 +777,10 @@ img {
   width: 235px;
   background-color: #AEC9E6;
 }
-.left-menu__wrapper:first-child {
+.left-menu__block__wrapper:first-child {
   border-radius: 15px 0 0 0;
 }
-.left-menu__wrapper:last-child {
+.left-menu__block__wrapper:last-child {
   padding-bottom: 15px;
   border-radius: 0 0 0 15px;
 }
