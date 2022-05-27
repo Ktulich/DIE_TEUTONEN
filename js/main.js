@@ -1,4 +1,4 @@
-$(document).ready(function() {
+// $(document).ready(function() {
 
     // Кнопка в начало страницы
 
@@ -70,21 +70,105 @@ $(document).ready(function() {
     
     // Аккордеон - Левое меню
     
-    const leftMenuWr = document.querySelectorAll('.left-menu__block__wrapper');
+    // const lMenu = document.querySelectorAll('.left-menu__block__wrapper');
     
-    leftMenuWr.forEach(el => {
-        el.addEventListener('click', (e) => {
-            const self = e.currentTarget;
-            const selfAccordeonLvl1 = self.querySelector('[data-name="accordeon-lvl1"]');
-            const selfAccordeonLvl2 = self.querySelector('[data-name="accordeon-lvl2"]');
+    // lMenu.forEach(el => {
+    //     el.addEventListener('click', (e) => {
+    //         const self = e.currentTarget;
+    //         const selfAccordeonLvl1 = self.querySelector('[data-name="accordeon-lvl1"]');
+    //         const selfAccordeonLvl21 = self.querySelector('[data-name="accordeon-lvl2-1"]');
+    //         const selfAccordeonLvl22 = self.querySelector('[data-name="accordeon-lvl2-2"]');
+    //         const selfAccordeonLvl23 = self.querySelector('[data-name="accordeon-lvl2-3"]');
             
-            self.classList.toggle('accordeon-open');
+    //         self.classList.toggle('accordeon-open');
             
-            if (self.classList.contains('accordeon-open')) {
-                selfAccordeonLvl2.style.maxHeight = selfAccordeonLvl2.scrollHeight + 'px';
-            } else {
-                selfAccordeonLvl2.style.maxHeight = null;
-            }
+    //         if (self.classList.contains('accordeon-open')) {
+    //             selfAccordeonLvl21.style.maxHeight = selfAccordeonLvl21.scrollHeight + 'px';
+    //             selfAccordeonLvl22.style.maxHeight = selfAccordeonLvl22.scrollHeight + 'px';
+    //             selfAccordeonLvl23.style.maxHeight = selfAccordeonLvl23.scrollHeight + 'px';
+    //         } else {
+    //             selfAccordeonLvl21.style.maxHeight = null;
+    //             selfAccordeonLvl22.style.maxHeight = null;
+    //             selfAccordeonLvl23.style.maxHeight = null;
+    //         }
+    //     });
+    // });
+
+
+    // Правое меню
+
+    // const rMenu = document.querySelectorAll('[data-name="accordeon-lvl3"]');
+
+    // // rMenuInfo.classList.add('.none');
+    // rMenu.forEach(el => {
+
+    //     const rMenuOne = document.querySelector('[data-name="accordeon-lvl3"]');
+    //     const rMenuInfo = document.querySelectorAll('.right-menu');
+
+    //     el.addEventListener('click', (e) => {
+            
+    //         if(rMenuOne.classList.contains('g_36-a1')) {
+    //             document.querySelector('.g_36-a1-i').classList.remove('none');
+    //         } else {
+    //             document.querySelector('.g_36-a1-i').classList.add('none');
+    //         }
+
+    //     });
+        
+    // });
+
+
+    // Аккордеон левое меню 2 версия 
+    // let headersAcc = ['.accordion h1','.accordion h2',' accordion h3'];
+
+    // $('.accordion').click(function(e) {
+    //     let targetAcc = e.target;
+    //     let nameAcc = targetAcc.nodeName.toUpperCase();
+
+    //     if($.inArray(nameAcc,headersAcc) > -1) {
+    //         let subItemAcc = $(targetAcc).next();
+
+    //         //slideUp all elements (except target) at current depth or greater
+    //         let depthAcc = $(subItemAcc).parents().length;
+    //         let allAtDepthAcc = $('.accordion div').filter(function() {
+    //             if($(this).parents().length >= depthAcc && this !== subItemAcc.get(0)) {
+    //                 return true;
+    //             }
+    //         });
+    //         $(allAtDepthAcc).slideUp('fast');
+
+    //         //slideToggle target content and adjust bottom border if necessary
+    //         subItemAcc.slideToggle('fast',function() {
+    //             $('.accordion:visible:last').css('border-radius','0 0 0 15px');
+    //         });
+    //         $(targetAcc).css({'border-bottom-right-radius':'0', 'border-bottom-left-radius':'0'});
+    //     }
+    // });
+
+    var headers = ["H1","H2","H3","H4","H5","H6"];
+
+    $(".accordion").click(function(e) {
+    var target = e.target,
+        name = target.nodeName.toUpperCase();
+    
+    if($.inArray(name,headers) > -1) {
+        var subItem = $(target).next();
+        
+        //slideUp all elements (except target) at current depth or greater
+        var depth = $(subItem).parents().length;
+        var allAtDepth = $(".accordion p, .accordion div").filter(function() {
+        if($(this).parents().length >= depth && this !== subItem.get(0)) {
+            return true; 
+        }
         });
+        $(allAtDepth).slideUp("fast");
+        
+        //slideToggle target content and adjust bottom border if necessary
+        subItem.slideToggle("fast",function() {
+            $(".accordion :visible:last").css("border-radius","0 0 10px 10px");
+        });
+        $(target).css({"border-bottom-right-radius":"0", "border-bottom-left-radius":"0"});
+    }
     });
-});
+
+// });

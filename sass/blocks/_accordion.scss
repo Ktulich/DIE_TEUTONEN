@@ -1,0 +1,169 @@
+// .accordion {
+//     margin-top: 70px;
+//     margin-bottom: 70px;
+//     // padding-bottom: 15px;
+    
+//     width: 235px;
+//     // background-color: #AEC9E6;
+// }
+
+// .accordion h1, h2, h3 {
+//     cursor: pointer;
+// }
+
+// .accordion h1 {
+//     padding-top: 15px;
+//     padding-left: 15px;
+//     font-weight: 700;
+//     font-size: 30px;
+//     line-height: 1;
+    
+//     background-color: #AEC9E6;
+//     &:first-child {
+//         border-radius: 15px 0 0 0;
+//     }
+
+//     &:last-of-type {
+//         border-radius: 0 0 0 15px;
+//     }
+// }
+
+// .accordion h2 {
+//     padding-top: 12px;
+//     padding-left: 15px;
+//     font-weight: 700;
+//     font-size: 24px;
+//     line-height: 1;
+
+//     background-color: #AEC9E6;
+// }
+
+// .accordion h3 {
+//     padding-top: 8px;
+//     padding-left: 15px;
+//     padding-bottom: 0;
+//     font-weight: 600;
+//     font-size: 20px;
+//     line-height: 1;
+    
+//     background-color: #AEC9E6;
+    
+//     &:hover {
+//         text-decoration: underline;
+//     }
+    
+// }
+
+// .accordion h3:last-child {
+//     padding-bottom: 15px;
+// }
+// .accordion div {
+//     display: none;
+// }
+
+// .accordion .accordion__open-1, .accordion .accordion__open-2 {
+//     display: block;
+// }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 100%;
+}
+
+.accordion {
+    width: 380px;
+    margin: 20px auto;
+}
+
+.accordion h1,
+h2,
+h3,
+h4 {
+    cursor: pointer;
+}
+
+.accordion h2,
+h3,
+h4 {
+    font-family: "News Cycle";
+}
+
+.accordion h1 {
+    padding: 15px 20px;
+    background-color: #333;
+    font-family: Lobster;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #1abc9c;
+}
+
+.accordion h1:hover {
+    color: #4afcdc;
+}
+
+.accordion h1:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.accordion h1:last-of-type {
+    border-radius: 0 0 10px 10px;
+}
+
+.accordion h1:not(:last-of-type) {
+    border-bottom: 1px dotted #1abc9c;
+}
+
+.accordion div,
+.accordion p {
+    display: none;
+}
+
+.accordion h2 {
+    padding: 5px 25px;
+    background-color: #1abc9c;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.accordion h2:hover {
+    background-color: #09ab8b;
+}
+
+.accordion h3 {
+    padding: 5px 30px;
+    background-color: #b94152;
+    font-size: .9rem;
+    color: #ddd;
+}
+
+.accordion h3:hover {
+    background-color: #a93142;
+}
+
+.accordion h4 {
+    padding: 5px 35px;
+    background-color: #ffc25a;
+    font-size: .9rem;
+    color: #af720a;
+}
+
+.accordion h4:hover {
+    background-color: #e0b040;
+}
+
+.accordion p {
+    padding: 15px 35px;
+    background-color: #ddd;
+    font-family: "Georgia";
+    font-size: .8rem;
+    color: #333;
+    line-height: 1.3rem;
+}
+
+.accordion .opened-for-codepen {
+    display: block;
+}
